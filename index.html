@@ -9,6 +9,8 @@
     <script src="https://use.typekit.net/jcb7fvf.js"></script>
     <script>try{Typekit.load({ async: true });}catch(e){}</script>
     <script src="assets/js/jquery.cookie.js"></script>
+    <script type="text/javascript" src="feedback/js/feedback.js"></script>
+    <script type="text/javascript" src="feedback/js/jquery.jgrowl.js"></script>
     <script src="assets/js/main.js"></script>
     <title>Skein</title>
 
@@ -243,12 +245,13 @@
             <h3 class="home-contact-form-heading">let’s talk about your business VISION.
                 No strings attached!</h3>
 
-            <form action="" class="home-contact-form">
+            <form action="" method="get" class="home-contact-form" name="start-form">
                 <label class="contact-form-label">name</label>
                 <input class="home-contact-form-elem" type="text" name="name">
                 <label class="contact-form-label">email</label>
                 <input class="home-contact-form-elem" type="text" name="email">
-                <button type="submit" class="home-contact-btn">start now!</button>
+                <!--<button type="submit" name="send" class="home-contact-btn">start now!</button>-->
+                <input type="button"  name="send" class="home-contact-btn feedback" value="start now!"/>
             </form>
             <p class="contact-content">or</p>
             <p class="contact-content">TEAM@SKEINGROUP.COM <br/>
@@ -351,7 +354,7 @@
                 <form action="" class="home-contact-form">
                     <input class="home-contact-form-elem" type="text" name="name" placeholder="Name">
                     <input class="home-contact-form-elem" type="text" name="email" placeholder="Email">
-                    <button type="submit" class="home-contact-btn">book now!</button>
+                    <button type="submit" class="home-contact-btn feedback">book now!</button>
                 </form>
                 <p class="contact-content">or</p>
                 <p class="contact-content">TEAM@SKEINGROUP.COM <br/>

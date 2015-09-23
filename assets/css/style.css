@@ -1178,7 +1178,7 @@ body {
 }
 
 .teammate-photo, .teammate-content {
-  height: 390px;
+  height: 400px;
   text-align: center;
   padding: 10px;
 }
@@ -1189,7 +1189,7 @@ body {
 
 .teammate-content {
   background: #2bd179;
-  padding-top: 70px;
+  padding-top: 30px;
   position: relative;
 }
 .teammate-content:after {
@@ -1222,8 +1222,8 @@ body {
 .teammate-desc {
   margin: 25px auto 0;
   color: #01354d;
-  max-width: 280px;
-  font-size: 18px;
+  max-width: 300px;
+  font-size: 16px;
 }
 
 .company-teammate {

@@ -1,6 +1,5 @@
 <?php
 
-session_start();
 $act = isset($_REQUEST['act']) ? $_REQUEST['act'] : die('error');
 $params = isset($_REQUEST['json']) ? json_decode($_REQUEST['json'], true) : array();
 $jsonBox = array();
@@ -11,10 +10,10 @@ $form = array();
 $host = $_SERVER['HTTP_HOST'];
 $ref = $_SERVER['HTTP_REFERER'];
 
-$form['form-1'] = array(
+$form['start-form'] = array(
     'fields' => array(
         'name' => array(
-            'title' => 'Имя',
+            'title' => 'Name',
             'validate' => array(
                 'preg' => '%[A-Z-a-zА-Яа-я\s]%',
                 'minlength' => '3',
@@ -26,8 +25,8 @@ $form['form-1'] = array(
                 'maxlength' => 'Максимальная длинна поля [ %1$s ] превышает допустимую - %2$s',
             )
         ),
-        'tell' => array(
-            'title' => 'Телефон',
+        'email' => array(
+            'title' => 'email',
             'validate' => array(
                 'preg' => "/^((8|\+)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{5,10}$/",
                 'minlength' => '5',
@@ -40,13 +39,13 @@ $form['form-1'] = array(
     ),
     'cfg' => array(
         'charset' => 'utf-8',
-        'subject' => 'Заказ',
-        'title' => 'Заказ',
+        'subject' => 'letter',
+        'title' => 'letter',
         'ajax' => true,
         'validate' => true,
         'from_email' => 'noreply@email.com',
-        'from_name' => 'Veracake',
-        'to_email' => 'shal91@mail.ru',
+        'from_name' => 'New letter',
+        'to_email' => 'dmitriy.shalaev@skeingroup.com',
         'to_name' => 'noreply1, noreply2',
         'geoip' => true,
         'referer' => true,
