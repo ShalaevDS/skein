@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="../bower_components/bxslider-4/dist/jquery.bxslider.min.js"></script>
+    <script src="https://use.typekit.net/jcb7fvf.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+    <script src="assets/js/jquery.cookie.js"></script>
+    <script src="assets/js/main.js"></script>
+    <title>Skein</title>
+
+    <link rel="stylesheet" href="../bower_components/bxslider-4/dist/jquery.bxslider.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+
+
+
+</head>
+<body>
+<header id="header" class="header">
+    <div class="container clearfix">
+        <a class="home-logo pull-left" href="#"></a>
+        <div class="logo-text pull-left hidden-xs">building the future</div>
+        <nav class="home-nav pull-right">
+            <a href="#" class="nav-xs-icon" id="show-nav-xs"><span></span></a>
+            <i class="fa fa-times nav-close-icon" id="nav-close-icon"></i>
+            <ul class="home-nav-list" id="top-nav-list">
+                <li class="home-nav-list-item">
+                    <a href="portfolio.html" class="home-nav-list-link">case-studies</a>
+                </li>
+                <li class="home-nav-list-item">
+                    <a href="careers.html" class="home-nav-list-link">careers</a>
+                </li>
+                <li class="home-nav-list-item">
+                    <a href="company.html" class="home-nav-list-link">company</a>
+                </li>
+                <li class="home-nav-list-item">
+                    <a href="#" class="home-nav-list-link" data-toggle="modal" data-target="#contact-form-modal">start now</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <nav class="soc-nav">
+        <ul>
+            <li class="soc-nav-item">
+                <a href="#" class="soc-nav-link"><i class="fa fa-twitter"></i></a>
+            </li>
+            <li class="soc-nav-item">
+                <a href="#" class="soc-nav-link"><i class="fa fa-facebook"></i></a>
+            </li>
+            <li class="soc-nav-item">
+                <a href="#" class="soc-nav-link"><i class="fa fa-linkedin"></i></a>
+            </li>
+            <li class="soc-nav-item">
+                <a href="#" class="soc-nav-link"><i class="fa fa-google-plus"></i></a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main id="home-page">
+    <article class="home-top-block">
+        <div class="container clearfix">
+            <h1 class="home-page-heading">innovate inelligently</h1>
+            <aside class="home-page-h1-aside">
+                we create bespoke web platforms your customers will love.
+                for that we used advanced information dcience technologies
+            </aside>
+            <a href="portfolio.html" class="home-top-portfolio-link default-nav-link"><span>see our work</span></a>
+        </div>
+    </article>
+    <article class="cookie-warning hidden-xs">
+        <div class="container">
+        <p class="cookie-warning-content">
+            BY CONTINUING TO USE THIS SITE YOU CONSENT TO THE USE OF COOKIES ON YOUR DEVICE AS DESCRIBED
+            IN OUR POLICY UNLESS YOU HAVE DISABLED THEM. YOU CAN CHANGE YOUR COOKIE SETINGS AT ANY
+            TIME BUT PARTS OF OUR SITE WILL NOT FUNCTION CREEECTLY WITHOUT THEM.
+        </p>
+        <a href="#" id="close-warning" class="warning-close"><i class="fa fa-times"></i></a>
+            </div>
+    </article>
+    <article class="projects-bar">
+        <div class="container clearfix">
+            <img src="img/home-proj-tp-link.png" alt=""/>
+            <img src="img/home-proj-msc.png" alt=""/>
+            <img src="img/home-proj-airfrance.png" alt=""/>
+            <img src="img/home-proj-cupid.png" alt=""/>
+            <img src="img/home-proj-ma.png" alt=""/>
+        </div>
+    </article>
+    <article class="home-expertise">
+        <div class="container clearfix">
+            <h2 class="expertise-header clearfix"><span class="green-text">skein:</span> all expertise you need to create a perfect web app</h2>
+            <section class="exp-section col-md-3 col-sm-6">
+                <div class="exp-icon icon1"></div>
+                <h3 class="expertise-header-inside">mobile and web development</h3>
+                <p class="expertise-content">
+                    Skein engineers work closely with your team to architect
+                    and implement applications what leverage the latest innovations
+                    creating a game-changing product. Geolocation, healthcare
+                    information, social networks, APIs, sensor network data are just a few
+                    elements of the ecosystem that impact your business model
+                    and data flow, our developer team knows how
+                    to use them for your business success.
+                </p>
+            </section>
+            <section class="exp-section col-md-3 col-sm-6">
+                <div class="exp-icon icon2"></div>
+                <h3 class="expertise-header-inside">TECHNOLOGY CONSULTANCY AND TEAM FORMATION</h3>
+                <p class="expertise-content">
+                    Whether you need an in-house or interim part-time CTO,
+                    data analytic support, or development team, we leverage our
+                    expertise and connections in the local
+                    and international talent markets to create a
+                    bespoke team that fits your company goals and growth pace.
+                </p>
+            </section>
+            <section class="exp-section col-md-3 col-sm-6">
+                <div class="exp-icon icon3"></div>
+                <h3 class="expertise-header-inside">GO TO MARKET STRATEGIES
+                    FOR DATA-DRIVEN STARTUPS</h3>
+                <p class="expertise-content">
+                    Rapidly changing technologies are having profound impact on
+                    consumer behaviour. Shifting business models require both
+                    technical and business expertise, and Skein provides support from business
+                    planning and validation to customer testing and investment raising.
+                </p>
+            </section>
+            <section class="exp-section col-md-3 col-sm-6">
+                <div class="exp-icon icon4"></div>
+                <h3 class="expertise-header-inside">Analytics and modelling</h3>
+                <p class="expertise-content">Data science tools and maturity in
+                    information processing infrastructure bring in new efficiencies
+                    in multiple areas, including business intelligence,
+                    digital advertising, financial markets. Our team of
+                    PhD-level analysts focus on predictive modelling, data mining, visualizations and
+                    reporting to deliver outstanding results for your business.</p>
+            </section>
+        </div>
+    </article>
+    <article class="home-team clearfix">
+        <div class="col-sm-6 home-team-block home-team-left">
+            <h2 class="home-team-heading">right team</h2>
+            <p class="home-team-content">
+                We are am expert team of software engineers,
+                data scienties and business analysts who are
+                passionate about cutting edge technologies.
+                We use proprietary tools and
+                methodologies to build systems your
+                customers will be grateful to you for.
+            </p>
+            <a href="team.html" class="home-team-link default-nav-link"><span>meet the team</span></a>
+        </div>
+        <div class="col-sm-6 home-team-block home-team-right hidden-xs"></div>
+    </article>
+    <article class="home-execution">
+        <div class="container clearfix">
+            <h2 class="home-execution-header">your vision <span class="green-text">our execution</span></h2>
+            <section class="col-md-4 col-sm-6">
+                <img src="img/exe1.png" alt="">
+                <h3 class="home-execution-heading">be sure to use most advanced technology</h3>
+                <p class="home-execution-content">
+                    Focus on the big picture and the business strategy, our engeneers will make sure that you get the most advanced tools available to imlement your vision.
+                </p>
+            </section>
+            <section class="col-md-4 col-sm-6">
+                <img src="img/exe2.png" alt="">
+                <h3 class="home-execution-heading">we make scaling up easy</h3>
+                <p class="home-execution-content">Forward-looking approach to architecture and choice of developments stack helps you to grow.</p>
+            </section>
+            <section class="col-md-4 col-sm-6">
+                <img src="img/exe3.png" alt="">
+                <h3 class="home-execution-heading">data science</h3>
+                <p class="home-execution-content">Deep learning, predictive modelling and data
+                    processing solution will give your system a
+                    competetive edge and make sure your intellectual property is innovative and patentable.</p>
+            </section>
+            <section class="col-md-4 col-sm-6">
+                <img src="img/exe4.png" alt="">
+                <h3 class="home-execution-heading">payment system integration</h3>
+                <p class="home-execution-content">Your commercial objectives are met by intelligent integrationof monetesations tools and ROI-focused user experience planning.</p>
+            </section>
+            <section class="col-md-4 col-sm-6">
+                <img src="img/exe5.png" alt="">
+                <h3 class="home-execution-heading">ongoing support included</h3>
+                <p class="home-execution-content">Long-term commitment to your success means we support your projects adjustments and growth.</p>
+            </section>
+            <section class="col-md-4 col-sm-6">
+                <img src="img/exe6.png" alt="">
+                <h3 class="home-execution-heading">claim back R&D expences</h3>
+                <p class="home-execution-content">Get tax credit to offset software development costs.</p>
+            </section>
+        </div>
+    </article>
+    <article class="home-lower-slider hidden-xs">
+        <div class="lower-slider-outside">
+            <div class="container clearfix">
+                <h2 class="home-lower-slider-h2">case <br/> studies</h2>
+
+                <a href="portfolio.html" class="default-nav-link lower-slider-link"><span>see case-studie</span></a>
+            </div>
+        </div>
+
+        <ul class="bxslider clearfix" id="home-lower-slider">
+            <li>
+                <div class="lower-slider-content">
+                    <div class="container clearfix">
+                        <h3 class="lower-bx-heading">business intelligense system</h3>
+                        <img src="img/lower-slide1.png" class="lower-slider-img" alt="">
+                    </div>
+                </div>
+                    <img src="img/home-lower-slide-1.jpg" alt="">
+            </li>
+            <li>
+                <div class="lower-slider-content">
+                    <div class="container clearfix">
+                    <h3 class="lower-bx-heading">eHEALTH <br>
+                        Toothscan: <br/>
+                        revolutionising<br/>
+                        healthcare</h3>
+                        <img src="img/lower-slide2.png" class="lower-slider-img" alt="">
+                </div>
+                    </div>
+
+                    <img src="img/home-lower-slide-2.jpg" alt="">
+            </li>
+            <li>
+                <div class="lower-slider-content">
+                    <div class="container clearfix">
+                    <h3 class="lower-bx-heading">social shoping</h3>
+                        <img src="img/lower-slide2.png" class="lower-slider-img" alt="">
+                </div>
+                    </div>
+
+                    <img src="img/home-lower-slide-3.jpg" alt="">
+            </li>
+        </ul>
+    </article>
+    <article class="home-contacts clearfix">
+        <div class="col-sm-6 home-contacts-left">
+            <h3 class="home-contact-form-heading">let’s talk about your business VISION.
+                No strings attached!</h3>
+
+            <form action="" class="home-contact-form">
+                <label class="contact-form-label">name</label>
+                <input class="home-contact-form-elem" type="text" name="name">
+                <label class="contact-form-label">email</label>
+                <input class="home-contact-form-elem" type="text" name="email">
+                <button type="submit" class="home-contact-btn">start now!</button>
+            </form>
+            <p class="contact-content">or</p>
+            <p class="contact-content">TEAM@SKEINGROUP.COM <br/>
+                +44 (0) 20 32393323</p>
+        </div>
+        <div class="col-sm-6 home-contacts-right">
+            <h2 class="home-contacts-heading">contact us</h2>
+            <div class="home-locations">
+                <h4 class="loc-country">united kingdom</h4>
+                <span class="loc-label">Phone:</span>
+                <span class="loc-value">+44 (020) 3239 3323</span><br/>
+                <span class="loc-label">Email:</span>
+                <span class="loc-value">london@skeingroup.com</span>
+                <h5 class="loc-city">manchester</h5>
+                <span class="loc-address">2A Greenhill, Rd M8 9LN</span>
+                <h5 class="loc-city">london</h5>
+                <span class="loc-address">6-8 Bonhill St, EC2A 4BX</span>
+                <h4 class="loc-country">ukraine</h4>
+                <span class="loc-label">Address:</span>
+                <span class="loc-value">Narodnogo Opolcheniya, 1 Kyiv</span><br/>
+                <span class="loc-label">Phone:</span>
+                <span class="loc-value">+380 (044) 303 9593</span><br/>
+                <span class="loc-label">Email:</span>
+                <span class="loc-value">kyiv@skeingroup.com</span>
+                <h4 class="loc-country">france and monaco</h4>
+                <span class="loc-label">Address:</span>
+                <span class="loc-value">Igroom, 4 rue des Oliviers, 98000, Monaco</span><br/>
+                <span class="loc-label">Email:</span>
+                <span class="loc-value">france@skeingroup.com</span>
+            </div>
+        </div>
+    </article>
+    <article class="home-locations">
+
+    </article>
+    </main>
+    <footer class="footer">
+        <div class="container clearfix">
+        <section class="col-sm-4">
+            <h3 class="footer-h3">contact us</h3>
+            <h4 class="footer-title">registred address:</h4>
+            <p class="footer-content">
+                3A Greenhill Road,<br/>
+                Manchester, M89LN, UK
+            </p>
+            <h4 class="footer-title">phone:</h4>
+            <p class="footer-content">
+                +44 (020) 3239 3323
+            </p>
+            <h4 class="footer-title">email:</h4>
+            <div class="footer-content green-text">
+                team@skeingroup.com
+            </div>
+        </section>
+        <section class="col-sm-4">
+            <h3 class="footer-h3">follow us</h3>
+            <ul class="footer-soc">
+                <li class="footer-soc-item">
+                    <a href="#" class="footer-soc-link fa fa-twitter"></a>
+                </li>
+                <li class="footer-soc-item">
+                    <a href="#" class="footer-soc-link fa fa-facebook"></a>
+                </li>
+                <li class="footer-soc-item">
+                    <a href="#" class="footer-soc-link fa fa-google-plus"></a>
+                </li>
+                <li class="footer-soc-item">
+                    <a href="#" class="footer-soc-link fa fa-linkedin"></a>
+                </li>
+            </ul>
+        </section>
+        <section class="col-sm-4">
+            <h3 class="footer-h3">other links</h3>
+            <nav class="footer-nav">
+                <ul class="footer-nav-list">
+                    <li class="footer-nav-item">
+                        <a href="portfolio.html" class="footer-nav-link">Case-studies</a>
+                    </li>
+                    <li class="footer-nav-item">
+                        <a href="company.html" class="footer-nav-link">Company</a>
+                    </li>
+                    <li class="footer-nav-item">
+                        <a href="careers.html" class="footer-nav-link">Careers</a>
+                    </li>
+                    <li class="footer-nav-item">
+                        <a href="contact.html" class="footer-nav-link">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+            </div>
+    </footer>
+<div class="modal fade contact-modal" id="contact-form-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h3 class="modal-form-heading">let’s talk about your project.
+                    No strings attached!</h3>
+                <form action="" class="home-contact-form">
+                    <input class="home-contact-form-elem" type="text" name="name" placeholder="Name">
+                    <input class="home-contact-form-elem" type="text" name="email" placeholder="Email">
+                    <button type="submit" class="home-contact-btn">book now!</button>
+                </form>
+                <p class="contact-content">or</p>
+                <p class="contact-content">TEAM@SKEINGROUP.COM <br/>
+                    +44 (0) 20 32393323</p>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
