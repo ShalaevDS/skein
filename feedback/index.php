@@ -28,7 +28,7 @@ $form['start-form'] = array(
         'email' => array(
             'title' => 'email',
             'validate' => array(
-                'preg' => "/^((8|\+)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{5,10}$/",
+                'preg' => "*",
                 'minlength' => '5',
             ),
             'messages' => array(

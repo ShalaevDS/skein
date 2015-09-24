@@ -942,6 +942,7 @@ body {
   box-shadow: 0 3px 0 0 #01354d;
   text-transform: uppercase;
   transition: all .1s ease;
+  border: none;
 }
 .home-contact-btn:active {
   box-shadow: 0 0 0 0 #01354d;
@@ -1648,6 +1649,26 @@ body {
   border-top-color: #01354d;
 }
 
+@media (max-width: 767px) {
+  .contact-page-form {
+    width: 90%;
+    margin: 0 auto 50px;
+  }
+
+  .contact-label {
+    display: block;
+    text-align: center;
+    margin: 30px auto 10px;
+    line-height: 1.5;
+  }
+
+  .contact-text-container {
+    width: 100%;
+  }
+  .contact-text-container.left, .contact-text-container.right {
+    float: none;
+  }
+}
 /*adaptive*/
 @media (max-width: 991px) {
   .home-nav {
