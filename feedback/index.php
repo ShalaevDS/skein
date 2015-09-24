@@ -60,10 +60,10 @@ $form['start-form'] = array(
         'usepresuf' => false
     )
 );
-$form['form-2'] = array(
+$form['modal-form'] = array(
     'fields' => array(
         'name' => array(
-            'title' => 'Имя',
+            'title' => 'Name',
             'validate' => array(
                 'preg' => '%[A-Z-a-zА-Яа-я\s]%',
                 'minlength' => '3',
@@ -75,10 +75,10 @@ $form['form-2'] = array(
                 'maxlength' => 'Максимальная длинна поля [ %1$s ] превышает допустимую - %2$s',
             )
         ),
-        'tell' => array(
-            'title' => 'Телефон',
+        'email' => array(
+            'title' => 'email',
             'validate' => array(
-                'preg' => "/^((8|\+)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{5,10}$/",
+                'preg' => "*",
                 'minlength' => '5',
             ),
             'messages' => array(
@@ -86,69 +86,16 @@ $form['form-2'] = array(
                 'minlength' => 'Минимальная длинна поля [ %1$s ] меньше допустимой - %2$s',
             )
         ),
-//        'e-mail' => array(
-//            'title' => 'E-mail',
-//            'validate' => array(
-//                'preg' => '%@%is',
-//                'minlength' => '5',
-//            ),
-//            'messages' => array(
-//                'preg' => 'Поле [ %1$s ] возможно содержит ошибку',
-//                'minlength' => 'Минимальная длинна поля [ %1$s ] меньше допустимой - %2$s',
-//            )
-//        ),
-        'street' => array(
-            'title' => 'Ул. ',
-            'validate' => array(
-                'minlength' => '3',
-            )
-        ),
-        'house' => array(
-            'title' => 'дом ',
-            'validate' => array(
-                'minlength' => '1',
-            )
-        ),
-        'flat' => array(
-            'title' => 'Квартира',
-        ),
-        'podezd' => array(
-            'title' => 'подьезд ',
-        ),
-        'floor' => array(
-            'title' => 'этаж ',
-        ),
-        'code' => array(
-            'title' => 'код ',
-        ),
-        'text' => array(
-            'title' => 'Сообщение',
-        ),
-        'order' => array(
-            'title' => 'order',
-        ),
-        'sum' => array(
-            'title' => 'sum',
-        ),
-        'date' => array(
-            'title' => 'date '
-        ),
-        'hours' => array(
-            'title' => 'ta hz'
-            ),
-        'minutes' => array(
-            'title' => 'ta hz'
-            ),
     ),
     'cfg' => array(
         'charset' => 'utf-8',
-        'subject' => 'Заказ',
-        'title' => 'Заказ',
+        'subject' => 'letter',
+        'title' => 'letter',
         'ajax' => true,
         'validate' => true,
         'from_email' => 'noreply@email.com',
-        'from_name' => 'Veracake',
-        'to_email' => 'ukriv1@gmail.com',
+        'from_name' => 'New letter',
+        'to_email' => 'dmitriy.shalaev@skeingroup.com',
         'to_name' => 'noreply1, noreply2',
         'geoip' => true,
         'referer' => true,
@@ -156,17 +103,17 @@ $form['form-2'] = array(
         'tpl' => true,
         'antispam' => 'email77',
         'antispamjs' => 'address77',
-        'okay' => 'Ваш заказ принят!',
-        'fuck' => 'Неправильно заполнена форма',
+        'okay' => 'Сообщение отправлено - OK',
+        'fuck' => 'Сообщение отправлено - ERROR',
         'spam' => 'Cпам робот',
         'notify' => 'color-modal-textbox',
         'usepresuf' => false
     )
 );
-$form['form-3'] = array(
+$form['join-form'] = array(
     'fields' => array(
         'name' => array(
-            'title' => '�?мя',
+            'title' => 'name',
             'validate' => array(
                 'preg' => '%[A-Z-a-zА-Яа-я\s]%',
                 'minlength' => '3',
@@ -178,8 +125,28 @@ $form['form-3'] = array(
                 'maxlength' => 'Максимальная длинна поля [ %1$s ] превышает допустимую - %2$s',
             )
         ),
-        'tell' => array(
-            'title' => 'Телефон',
+        'short_resume' => array(
+            'title' => 'resume',
+            'validate' => array(
+                'minlength' => '0',
+            ),
+            'messages' => array(
+                'preg' => 'Поле [ %1$s ] возможно содержит ошибку',
+                'minlength' => 'Минимальная длинна поля [ %1$s ] меньше допустимой - %2$s',
+            )
+        ),
+        'cover_letter' => array(
+            'title' => 'cover_letter',
+            'validate' => array(
+                'minlength' => '0',
+            ),
+            'messages' => array(
+                'preg' => 'Поле [ %1$s ] возможно содержит ошибку',
+                'minlength' => 'Минимальная длинна поля [ %1$s ] меньше допустимой - %2$s',
+            )
+        ),
+        'phone' => array(
+            'title' => 'Tel number',
             'validate' => array(
                 'preg' => "/^((8|\+)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{5,10}$/",
                 'minlength' => '5',
@@ -189,51 +156,32 @@ $form['form-3'] = array(
                 'minlength' => 'Минимальная длинна поля [ %1$s ] меньше допустимой - %2$s',
             )
         ),
-        'e-mail' => array(
-            'title' => 'E-mail',
-            'validate' => array(
-                'preg' => '%@%is',
-                'minlength' => '5',
-            ),
-            'messages' => array(
-                'preg' => 'Поле [ %1$s ] возможно содержит ошибку',
-                'minlength' => 'Минимальная длинна поля [ %1$s ] меньше допустимой - %2$s',
-            )
-        ),
-        'text' => array(
+        'email' => array(
             'title' => 'Сообщение',
             'validate' => array(
+                'preg' => '%@%is',
                 'minlength' => '1',
             ),
             'messages' => array(
                 'minlength' => '[ %1$s ] необходимо заполнить',
             )
         ),
-        'checkbox' => array(
-            'title' => 'Checkbox',
+        'soc_profile' => array(
+            'title' => 'Soc_profile',
             'validate' => array(
-                'minlength' => '1',
+                'minlength' => '0',
             ),
             'messages' => array(
-                'minlength' => '[ %1$s ] необходимо установить',
+                'minlength' => '[ %1$s ] необходимо заполнить',
             )
         ),
-        'radio' => array(
-            'title' => 'Radio',
+        'website' => array(
+            'title' => 'Website',
             'validate' => array(
-                'minlength' => '1',
+                'minlength' => '0',
             ),
             'messages' => array(
-                'minlength' => '[ %1$s ] необходимо выбрать',
-            )
-        ),
-        'select' => array(
-            'title' => 'Select',
-            'validate' => array(
-                'minlength' => '1',
-            ),
-            'messages' => array(
-                'minlength' => '[ %1$s ] необходимо выбрать',
+                'minlength' => '[ %1$s ] необходимо заполнить',
             )
         ),
     ),
@@ -245,7 +193,7 @@ $form['form-3'] = array(
         'validate' => true,
         'from_email' => 'noreply@email.com',
         'from_name' => 'noreply',
-        'to_email' => 'noreply1@email.com, noreply2@email.com',
+        'to_email' => 'dmitriy.shalaev@skeingroup.com',
         'to_name' => 'noreply1, noreply2',
         'geoip' => true,
         'referer' => true,
