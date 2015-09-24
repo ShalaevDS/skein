@@ -89,6 +89,7 @@ function feedback(vars) {
         },
         success: function(answer) {
             //console.log(cfg);
+            $('#contact-form-modal').modal('hide');
           if(isset(cfg.notify) && !/none/i.test(cfg.notify)) {
 
              if(/textbox/i.test(cfg.notify)) {
