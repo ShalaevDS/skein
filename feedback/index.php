@@ -9,6 +9,7 @@ $exemple = array();
 $form = array();
 $host = $_SERVER['HTTP_HOST'];
 $ref = $_SERVER['HTTP_REFERER'];
+define("EMAIL","dmitriy.shalaev@skeingroup.com")
 
 $form['start-form'] = array(
     'fields' => array(
