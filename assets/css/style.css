@@ -458,31 +458,9 @@ button {
   font-weight: 700;
 }
 
-.arctic-modal-container {
-  position: fixed;
-  height: 200px;
-  width: 280px;
-  top: 50%;
-  left: 50%;
-  margin-top: -100px;
-  margin-left: -140px;
-}
-
-.arcticmodal-container_i {
-  position: relative;
-  width: 100%;
-}
-
-.arctic-modal-overlay {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-}
-
-.arcticmodal-close {
-  position: absolute;
+#feedback-modal-box {
+  margin: auto;
+  background: #2bd179;
 }
 
 /*main styles*/
