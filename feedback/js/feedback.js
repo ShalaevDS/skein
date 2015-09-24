@@ -140,7 +140,7 @@ function feedback(vars) {
 
             }
           }
-            $(bt).prop("disabled", false);
+            $(bt).attr("disabled", '');
             $(bt).removeClass('loading');
             //$(bt).val(bvc);
 

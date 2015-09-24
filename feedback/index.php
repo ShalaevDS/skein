@@ -116,7 +116,7 @@ $form['join-form'] = array(
             'title' => 'name',
             'validate' => array(
                 'preg' => '%[A-Z-a-zА-Яа-я\s]%',
-                'minlength' => '3',
+                'minlength' => '2',
                 'maxlength' => '35',
             ),
             'messages' => array(
