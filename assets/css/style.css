@@ -1092,6 +1092,7 @@ body {
 
 .proj-toothscan {
   background-image: url(../../img/toothscan-img.png);
+  background-size: auto 390px;
 }
 
 .proj-justify {
