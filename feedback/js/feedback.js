@@ -167,7 +167,7 @@ function feedback(vars) {
  *
  */
 
-$(document).on('click', '.feedback', function(){
+$(document).on('click', '.feedback,.feedback *', function(){
    var form = $(this).closest('form'), name = form.attr('name'), obj = {};
        obj.form = form;
        obj.act = name;
