@@ -788,6 +788,7 @@ body {
   top: 0;
   display: block;
   position: absolute;
+  transition: all .4s ease;
 }
 .bx-wrapper .bx-pager.bx-default-pager a:hover {
   background: transparent;
@@ -1591,7 +1592,7 @@ body {
   border-radius: 5px;
   background: #01354d;
   font-size: 1em;
-  padding: 10px;
+  padding: 12px;
   margin-bottom: 15px;
   color: #fff;
 }
