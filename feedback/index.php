@@ -28,7 +28,7 @@ $form['start-form'] = array(
         'email' => array(
             'title' => 'email',
             'validate' => array(
-                'preg' => "*",
+                'preg' => '%@%is',
                 'minlength' => '5',
             ),
             'messages' => array(
@@ -78,7 +78,7 @@ $form['modal-form'] = array(
         'email' => array(
             'title' => 'email',
             'validate' => array(
-                'preg' => "*",
+                'preg' => '%@%is',
                 'minlength' => '5',
             ),
             'messages' => array(
