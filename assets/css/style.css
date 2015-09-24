@@ -1214,6 +1214,13 @@ body {
   border-right: 34px solid transparent;
   left: 50%;
   margin-left: -34px;
+  transition: all .3s ease;
+}
+
+.teammate-photo, .teammate-content,
+.teammate-name, .teammate-photo,
+.teammate-prof, .teammate-desc {
+  transition: all .3s ease;
 }
 
 .teammate-name {
@@ -1249,24 +1256,25 @@ body {
   border-top: 45px solid #2bd179;
   top: 100%;
 }
-
-@media (min-width: 992px) {
-  .company-teammate.middle-section .teammate-photo, .company-teammate.middle-section .teammate-content {
-    background: #01354d;
-  }
-  .company-teammate.middle-section .teammate-content:after {
-    display: none;
-  }
-  .company-teammate.middle-section .teammate-name {
-    color: #2bd179;
-  }
-  .company-teammate.middle-section .teammate-prof {
-    color: #fff;
-  }
-  .company-teammate.middle-section .teammate-desc {
-    color: #fff;
-  }
+.company-teammate:hover .teammate-photo, .company-teammate:hover .teammate-content {
+  background: #01354d;
 }
+.company-teammate:hover .teammate-name {
+  color: #2bd179;
+}
+.company-teammate:hover .teammate-prof {
+  color: #fff;
+}
+.company-teammate:hover .teammate-desc {
+  color: #fff;
+}
+.company-teammate.bottom-content:hover .teammate-content:after {
+  border-bottom-color: #01354d;
+}
+.company-teammate.top-content:hover .teammate-content:after {
+  border-top-color: #01354d;
+}
+
 @media (max-width: 991px) {
   .company-teammate:after {
     content: '';
