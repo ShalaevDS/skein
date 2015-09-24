@@ -9,7 +9,7 @@ $exemple = array();
 $form = array();
 $host = $_SERVER['HTTP_HOST'];
 $ref = $_SERVER['HTTP_REFERER'];
-define("EMAIL","dmitriy.shalaev@skeingroup.com")
+define("EMAIL","dmitriy.shalaev@skeingroup.com");
 
 $form['start-form'] = array(
     'fields' => array(
@@ -46,7 +46,7 @@ $form['start-form'] = array(
         'validate' => true,
         'from_email' => 'noreply@email.com',
         'from_name' => 'New letter',
-        'to_email' => 'dmitriy.shalaev@skeingroup.com',
+        'to_email' => EMAIL,
         'to_name' => 'noreply1, noreply2',
         'geoip' => true,
         'referer' => true,
@@ -96,7 +96,7 @@ $form['modal-form'] = array(
         'validate' => true,
         'from_email' => 'noreply@email.com',
         'from_name' => 'New letter',
-        'to_email' => 'dmitriy.shalaev@skeingroup.com',
+        'to_email' => EMAIL,
         'to_name' => 'noreply1, noreply2',
         'geoip' => true,
         'referer' => true,
@@ -194,7 +194,7 @@ $form['join-form'] = array(
         'validate' => true,
         'from_email' => 'noreply@email.com',
         'from_name' => 'noreply',
-        'to_email' => 'dmitriy.shalaev@skeingroup.com',
+        'to_email' => EMAIL,
         'to_name' => 'noreply1, noreply2',
         'geoip' => true,
         'referer' => true,
