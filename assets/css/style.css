@@ -198,17 +198,18 @@ button {
   position: absolute;
   width: 100%;
   padding-top: 15px;
+  padding-bottom: 15px;
   z-index: 999;
   top: 0;
-}
-.header.grey-header {
-  background: rgba(200, 200, 200, 0.8);
 }
 .header.grey-header .logo-text {
   color: #888;
 }
 .header.grey-header .nav-xs-icon span {
   background: #888;
+}
+.header.grey-header .home-nav-list-link {
+  color: #888;
 }
 
 .home-logo {
@@ -255,7 +256,7 @@ button {
   text-transform: uppercase;
 }
 .home-nav-list-link.active {
-  color: #20db5d;
+  color: #20db5d !important;
 }
 
 .nav-xs-icon {
@@ -455,6 +456,25 @@ button {
   color: #01354d;
   margin: 70px auto 0;
   font-weight: 700;
+}
+
+.arctic-modal-container {
+  position: fixed;
+  height: 200px;
+  width: 280px;
+  top: 50%;
+  left: 50%;
+  margin-top: -100px;
+  margin-left: -140px;
+}
+
+.arcticmodal-container_i {
+  position: relative;
+  width: 100%;
+}
+
+.arcticmodal-close {
+  position: absolute;
 }
 
 /*main styles*/
@@ -1605,48 +1625,23 @@ body {
 
 .contact-submit {
   display: block;
-  position: absolute;
-  bottom: 0;
-  right: 15px;
-}
-.contact-submit span {
-  display: block;
-  position: relative;
-  color: #fff;
+  margin: 80px auto 40px;
+  border-radius: 5px;
+  line-height: 45px;
+  color: #01354d;
+  background: #2bd179;
+  padding: 0 25px;
+  border: none;
+  box-shadow: 2px 2px 0 0 #01354d;
   text-transform: uppercase;
-  font-weight: 700;
-  font-size: 1.2em;
-  line-height: 24px;
-  bottom: 40px;
-  right: 59px;
-  z-index: 10;
-  width: 60px;
+  font-weight: 900;
+  position: relative;
+  transition: .2s ease all;
 }
-.contact-submit span:after {
-  content: '';
-  display: block;
-  position: absolute;
-  height: 0;
-  width: 0;
-  border-left: 100px solid transparent;
-  border-right: 120px solid transparent;
-  border-top: 140px solid #2bd179;
-  -webkit-transform: rotate(-7deg);
-          transform: rotate(-7deg);
-  z-index: 5;
-  bottom: -44px;
-  right: -80px;
-  transition: all .2s ease;
-}
-.contact-submit span:before {
-  content: 'apply now!';
-  display: block;
-  position: absolute;
-  z-index: 1000;
-  top: -60px;
-}
-.contact-submit:hover span:after {
-  border-top-color: #01354d;
+.contact-submit:active {
+  box-shadow: none;
+  margin-bottom: 38px;
+  left: 2px;
 }
 
 @media (max-width: 767px) {
