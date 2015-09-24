@@ -20,9 +20,9 @@ $form['start-form'] = array(
                 'maxlength' => '35',
             ),
             'messages' => array(
-                'preg' => 'Поле [ %1$s ] возможно содержит ошибку',
-                'minlength' => 'Минимальная длинна поля [ %1$s ] меньше допустимой - %2$s',
-                'maxlength' => 'Максимальная длинна поля [ %1$s ] превышает допустимую - %2$s',
+                'preg' => 'Wrong field [ %1$s ]',
+                'minlength' => 'Wrong field [ %1$s ] min %2$s symbols',
+                'maxlength' => 'Wrong field [ %1$s ] max %2$s symbols',
             )
         ),
         'email' => array(
@@ -32,8 +32,8 @@ $form['start-form'] = array(
                 'minlength' => '5',
             ),
             'messages' => array(
-                'preg' => 'Поле [ %1$s ] возможно содержит ошибку',
-                'minlength' => 'Минимальная длинна поля [ %1$s ] меньше допустимой - %2$s',
+                'preg' => 'Wrong field [ %1$s ]',
+                'minlength' => 'Wrong field [ %1$s ] min %2$s symbols',
             )
         ),
     ),
@@ -70,9 +70,9 @@ $form['modal-form'] = array(
                 'maxlength' => '35',
             ),
             'messages' => array(
-                'preg' => 'Поле [ %1$s ] возможно содержит ошибку',
-                'minlength' => 'Минимальная длинна поля [ %1$s ] меньше допустимой - %2$s',
-                'maxlength' => 'Максимальная длинна поля [ %1$s ] превышает допустимую - %2$s',
+                'preg' => 'Wrong field [ %1$s ]',
+                'minlength' => 'Wrong field [ %1$s ] min %2$s symbols',
+                'maxlength' => 'Wrong field [ %1$s ] max %2$s symbols',
             )
         ),
         'email' => array(
@@ -82,8 +82,8 @@ $form['modal-form'] = array(
                 'minlength' => '5',
             ),
             'messages' => array(
-                'preg' => 'Поле [ %1$s ] возможно содержит ошибку',
-                'minlength' => 'Минимальная длинна поля [ %1$s ] меньше допустимой - %2$s',
+                'preg' => 'Wrong field [ %1$s ]',
+                'minlength' => 'Wrong field [ %1$s ] min %2$s symbols',
             )
         ),
     ),
@@ -120,9 +120,9 @@ $form['join-form'] = array(
                 'maxlength' => '35',
             ),
             'messages' => array(
-                'preg' => 'Поле [ %1$s ] возможно содержит ошибку',
-                'minlength' => 'Минимальная длинна поля [ %1$s ] меньше допустимой - %2$s',
-                'maxlength' => 'Максимальная длинна поля [ %1$s ] превышает допустимую - %2$s',
+                'preg' => 'Wrong field [ %1$s ]',
+                'minlength' => 'Wrong field [ %1$s ] min %2$s symbols',
+                'maxlength' => 'Wrong field [ %1$s ] max %2$s symbols',
             )
         ),
         'short_resume' => array(
@@ -131,8 +131,8 @@ $form['join-form'] = array(
                 'minlength' => '0',
             ),
             'messages' => array(
-                'preg' => 'Поле [ %1$s ] возможно содержит ошибку',
-                'minlength' => 'Минимальная длинна поля [ %1$s ] меньше допустимой - %2$s',
+                'preg' => 'Wrong field [ %1$s ]',
+                'minlength' => 'Wrong field [ %1$s ] min %2$s symbols',
             )
         ),
         'cover_letter' => array(
@@ -141,8 +141,8 @@ $form['join-form'] = array(
                 'minlength' => '0',
             ),
             'messages' => array(
-                'preg' => 'Поле [ %1$s ] возможно содержит ошибку',
-                'minlength' => 'Минимальная длинна поля [ %1$s ] меньше допустимой - %2$s',
+                'preg' => 'Wrong field [ %1$s ]',
+                'minlength' => 'Wrong field [ %1$s ] min %2$s symbols',
             )
         ),
         'phone' => array(
@@ -152,18 +152,18 @@ $form['join-form'] = array(
                 'minlength' => '5',
             ),
             'messages' => array(
-                'preg' => 'Поле [ %1$s ] возможно содержит ошибку',
-                'minlength' => 'Минимальная длинна поля [ %1$s ] меньше допустимой - %2$s',
+                'preg' => 'Wrong field [ %1$s ]',
+                'minlength' => 'Wrong field [ %1$s ] min %2$s symbols',
             )
         ),
         'email' => array(
-            'title' => 'Сообщение',
+            'title' => 'E-mail',
             'validate' => array(
                 'preg' => '%@%is',
                 'minlength' => '1',
             ),
             'messages' => array(
-                'minlength' => '[ %1$s ] необходимо заполнить',
+                'minlength' => 'Wrong field [ %1$s ] min %2$s symbols',
             )
         ),
         'soc_profile' => array(
@@ -172,7 +172,7 @@ $form['join-form'] = array(
                 'minlength' => '0',
             ),
             'messages' => array(
-                'minlength' => '[ %1$s ] необходимо заполнить',
+                'minlength' => 'Wrong field [ %1$s ] min %2$s symbols',
             )
         ),
         'website' => array(
@@ -181,7 +181,7 @@ $form['join-form'] = array(
                 'minlength' => '0',
             ),
             'messages' => array(
-                'minlength' => '[ %1$s ] необходимо заполнить',
+                'minlength' => 'Wrong field [ %1$s ] min %2$s symbols',
             )
         ),
     ),
