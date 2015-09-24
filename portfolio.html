@@ -18,9 +18,11 @@
     <link rel="stylesheet" href="../bower_components/bxslider-4/dist/jquery.bxslider.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <script>
-        $('#portfolio-page .default-nav-link').each(function(){
-            $(this).remove();
-        })
+        $(document).ready(function(){
+            $('#portfolio-page .default-nav-link').each(function(){
+                $(this).remove();
+            });
+        });
     </script>
 
 

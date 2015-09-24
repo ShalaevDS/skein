@@ -875,6 +875,11 @@ body {
   bottom: 0;
 }
 
+.slide-cover {
+  height: auto !important;
+  width: 100% !important;
+}
+
 .lower-slider-outside {
   position: absolute;
   top: 0;
@@ -1550,7 +1555,6 @@ body {
   max-width: 780px;
   position: relative;
   margin-bottom: 50px;
-  padding-bottom: 260px;
 }
 
 .contact-text-container {
@@ -1626,8 +1630,8 @@ body {
 }
 .contact-submit:active {
   box-shadow: none;
-  margin-top: 82px;
   left: 2px;
+  top: 2px;
 }
 
 @media (max-width: 767px) {
@@ -1648,6 +1652,12 @@ body {
   }
   .contact-text-container.left, .contact-text-container.right {
     float: none;
+  }
+
+  .contact-text-input, .contact-textarea {
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 /*adaptive*/
