@@ -78,7 +78,7 @@
   vertical-align: middle;
 }
 
-.proj-heading span {
+.before-load-inside, .proj-heading span {
   display: block;
   position: absolute;
   top: 50%;
@@ -429,13 +429,9 @@ button {
 }
 
 .before-load-inside {
-  height: 200px;
-  width: 200px;
+  height: 120px;
+  width: 120px;
   position: absolute;
-  top: 50%;
-  margin-top: -100px;
-  margin-left: -100px;
-  left: 50%;
   background-color: #000;
   background-image: url(../../img/skein-logo.svg);
   background-repeat: no-repeat;
@@ -1294,6 +1290,8 @@ body {
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover;
+}
+.company-top .container {
   position: relative;
 }
 
@@ -1309,8 +1307,27 @@ body {
   text-transform: uppercase;
   text-align: center;
   font-size: 18px;
-  top: 40%;
-  left: 67%;
+  top: 150px;
+  left: 0;
+}
+
+.company-h1 {
+  font-size: 60px;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 200px;
+  font-weight: 700;
+}
+
+.company-h1-content {
+  color: #fff;
+  text-align: center;
+  font-size: 30px;
+  width: 90%;
+  max-width: 700px;
+  margin: 40px auto;
+  text-transform: uppercase;
 }
 
 .company-team .container {
@@ -1850,6 +1867,10 @@ body {
     line-height: 60px;
     border-bottom: 2px solid #fff;
     text-align: center;
+  }
+
+  .header.grey-header .home-nav-list-link {
+    color: #fff;
   }
 
   .nav-xs-icon {
