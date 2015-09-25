@@ -256,7 +256,7 @@ button {
   text-transform: uppercase;
 }
 .home-nav-list-link.active {
-  color: #20db5d !important;
+  color: #2bd179 !important;
 }
 
 .nav-xs-icon {
@@ -277,16 +277,22 @@ button {
   display: block;
   position: relative;
   line-height: 60px;
-  height: 60px;
-  width: 0;
+  height: 62px;
+  width: 140px;
   font-size: 14px;
   text-align: center;
   color: #35363a;
   transition: all .4s ease;
   left: -140px;
+  text-transform: uppercase;
+  background: #2bd179;
+  padding: 0;
+  border-top: 1px solid #2bd179;
+  border-bottom: 1px solid #2bd179;
 }
 .soc-nav-link i {
   position: absolute;
+  display: block;
   z-index: 500;
   line-height: 60px;
   top: 0;
@@ -294,23 +300,12 @@ button {
   bottom: 0;
 }
 .soc-nav-link:before {
-  content: 'follow us';
-  text-transform: uppercase;
-  background: #2bd179;
-  padding: 0 10px;
-  height: 60px;
-  display: block;
-  position: relative;
-  left: 0;
-  width: 140px;
-  transition: all .4s ease;
-}
-.soc-nav-link:after {
   content: '';
   position: absolute;
   top: 0;
   left: 140px;
   display: block;
+  z-index: 200;
   border-top: 30px solid transparent;
   border-bottom: 30px solid transparent;
   border-left: 30px solid #2bd179;
@@ -318,16 +313,32 @@ button {
   width: 0;
   transition: border .4s ease;
 }
+.soc-nav-link:after {
+  content: '';
+  position: absolute;
+  top: -1px;
+  left: 140px;
+  display: block;
+  z-index: 100;
+  border-top: 31px solid transparent;
+  border-bottom: 31px solid transparent;
+  border-left: 31px solid #01354d;
+  height: 0;
+  width: 0;
+  transition: border .4s ease;
+}
 .soc-nav-link:hover {
   color: #fff;
   left: 0px;
+  background: #01354d;
+  border-top-color: #2bd179;
+  border-bottom-color: #2bd179;
 }
 .soc-nav-link:hover:after {
-  border-left-color: #01354d;
+  border-left-color: #2bd179;
 }
 .soc-nav-link:hover:before {
-  background: #01354d;
-  color: #fff;
+  border-left-color: #01354d;
 }
 .soc-nav-link:hover i {
   left: 135px;
