@@ -422,15 +422,20 @@ button {
   bottom: 0;
   left: 0;
   right: 0;
+  height: 100%;
   background: #fff;
   opacity: 1;
   z-index: 9999999;
 }
 
 .before-load-inside {
-  height: 100px;
-  width: 100px;
-  margin: 250px auto 0;
+  height: 200px;
+  width: 200px;
+  position: absolute;
+  top: 50%;
+  margin-top: -100px;
+  margin-left: -100px;
+  left: 50%;
   background-color: #000;
   background-image: url(../../img/skein-logo.svg);
   background-repeat: no-repeat;
