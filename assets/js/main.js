@@ -2,7 +2,7 @@
  * Created by Max on 17.09.2015.
  */
 $(document).ready(function(){
-    $('#before-load').animate({"opacity":"0"},3000,function(){
+    $('#before-load').animate({opacity:0},2000,function(){
         $('#before-load').remove()
     });
     $('#close-warning').click(function(){
