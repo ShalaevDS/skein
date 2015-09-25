@@ -8,6 +8,7 @@
  */
 @import url(../../../bower_components/bootstrap/dist/css/bootstrap.min.css);
 @import url(../../../bower_components/font-awesome/css/font-awesome.min.css);
+@import url(../../../bower_components/animate.css/animate.min.css);
 /*
 ** example
 ** +arr(500,50, #000, l)
@@ -193,6 +194,10 @@ button {
 
 /*buttons, icons, sprites*/
 /*main header styles*/
+.modal-active {
+  padding-right: 17px;
+}
+
 .header {
   line-height: 105px;
   position: absolute;
@@ -322,7 +327,7 @@ button {
   z-index: 100;
   border-top: 31px solid transparent;
   border-bottom: 31px solid transparent;
-  border-left: 31px solid #01354d;
+  border-left: 32px solid #01354d;
   height: 0;
   width: 0;
   transition: border .4s ease;
@@ -342,6 +347,95 @@ button {
 }
 .soc-nav-link:hover i {
   left: 135px;
+}
+
+.link-to-top {
+  position: fixed;
+  display: block;
+  right: -160px;
+  bottom: 100px;
+  width: 100px;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 60px;
+  background: #2bd179;
+  color: #01354d;
+  border-top: 1px solid #2bd179;
+  border-bottom: 1px solid #2bd179;
+  transition: all .6s ease;
+  opacity: 0;
+}
+.link-to-top.needed {
+  right: -100px;
+  opacity: 1;
+}
+.link-to-top:before {
+  content: '';
+  top: 0;
+  display: block;
+  position: absolute;
+  right: 100px;
+  height: 0;
+  width: 0;
+  transition: all .6s ease;
+  border-top: 31px solid transparent;
+  border-bottom: 31px solid transparent;
+  border-right: 32px solid #01354d;
+}
+.link-to-top:after {
+  content: '';
+  top: 1px;
+  display: block;
+  position: absolute;
+  right: 100px;
+  height: 0;
+  width: 0;
+  transition: all .6s ease;
+  border-top: 30px solid transparent;
+  border-bottom: 30px solid transparent;
+  border-right: 30px solid #2bd179;
+}
+.link-to-top i {
+  position: absolute;
+  display: block;
+  line-height: 60px;
+  width: 20px;
+  right: 100px;
+  top: 0;
+  z-index: 500;
+}
+.link-to-top:hover {
+  color: #fff;
+  background: #01354d;
+  right: 0;
+}
+.link-to-top:hover:after {
+  border-right-color: #01354d;
+}
+.link-to-top:hover:before {
+  border-right-color: #2bd179;
+}
+
+.before-load {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #fff;
+  transition: all .4s ease;
+  opacity: 1;
+  z-index: 9999999;
+}
+
+.before-load-inside {
+  height: 100px;
+  width: 100px;
+  margin: 200px auto 0;
+  background-color: #000;
+  background-image: url(../../img/skein-logo.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
 }
 
 /*main footer styles*/
@@ -764,7 +858,7 @@ body {
   border: none;
 }
 
-.bx-viewport {
+.bx-viewport, ul.bx-slider > li {
   height: 960px !important;
 }
 
@@ -818,8 +912,8 @@ body {
   position: relative;
 }
 .home-lower-slider li {
-  overflow: hidden;
   position: relative;
+  height: 960px;
 }
 .home-lower-slider li img {
   display: block;
@@ -850,9 +944,21 @@ body {
   position: absolute;
   width: 100%;
   height: 960px;
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .lower-slider-content .container {
   position: relative;
+}
+.lower-slider-content.slide1 {
+  background-image: url(../../img/home-lower-slide-1.jpg);
+}
+.lower-slider-content.slide2 {
+  background-image: url(../../img/home-lower-slide-2.jpg);
+}
+.lower-slider-content.slide3 {
+  background-image: url(../../img/home-lower-slide-3.jpg);
 }
 
 .lower-bx-heading {
@@ -890,6 +996,7 @@ body {
 .slide-cover {
   height: auto !important;
   width: 100% !important;
+  display: none !important;
 }
 
 .lower-slider-outside {
@@ -1175,7 +1282,7 @@ body {
 }
 .company-top {
   height: 815px;
-  background-image: url(../../img/company-top-bg.jpg);
+  background-image: url(../../img/company-top-bg2.jpg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover;
