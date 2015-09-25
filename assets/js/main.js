@@ -1,10 +1,13 @@
 /**
  * Created by Max on 17.09.2015.
  */
-$(document).ready(function(){
+window.onload = function() {
     $('#before-load').animate({opacity:0},1500,function(){
         $('#before-load').remove()
     });
+}
+$(document).ready(function(){
+
     $('#close-warning').click(function(){
         $(this).parent().remove();
         return false;
