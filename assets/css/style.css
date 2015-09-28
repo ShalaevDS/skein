@@ -442,6 +442,22 @@ iframe[name="google_conversion_frame"] {
   display: none;
 }
 
+.nav-xs-to-index {
+  display: block;
+  height: 120px;
+  width: 120px;
+  background-color: rgba(0, 0, 0, 0.8);
+  background-image: url(../../img/skein-logo.svg);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: 140px auto;
+  margin: 50px auto;
+  transition: .2s ease all;
+}
+.nav-xs-to-index:hover {
+  background-color: black;
+}
+
 /*main footer styles*/
 .footer {
   background: #01354d;
@@ -1285,7 +1301,7 @@ body {
   }
 }
 .company-top {
-  height: 815px;
+  min-height: 815px;
   background-image: url(../../img/home-team-bg.jpg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
@@ -1311,12 +1327,18 @@ body {
   left: 0;
 }
 
+.company-top-text-cover {
+  max-width: 740px;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.7);
+  margin: 200px auto 40px;
+}
+
 .company-h1 {
   font-size: 60px;
   color: #fff;
   text-align: center;
   text-transform: uppercase;
-  margin-top: 200px;
   font-weight: 700;
 }
 
@@ -1324,8 +1346,6 @@ body {
   color: #fff;
   text-align: center;
   font-size: 30px;
-  width: 90%;
-  max-width: 700px;
   margin: 40px auto;
   text-transform: uppercase;
 }
@@ -1452,6 +1472,14 @@ body {
   }
 }
 @media (max-width: 767px) {
+  .company-h1 {
+    font-size: 45px;
+  }
+
+  .company-h1-content {
+    font-size: 24px;
+  }
+
   .company-heading {
     left: 35%;
   }
@@ -1640,6 +1668,7 @@ body {
   font-size: 18px;
   text-align: center;
   font-weight: 700;
+  min-height: 55px;
 }
 
 .benefits-content {
@@ -1830,26 +1859,10 @@ body {
     width: 100%;
     z-index: 2000;
     background-color: #01354d;
-    padding-top: 220px;
     font-size: 16px;
   }
   .home-nav-list.open {
     display: block;
-  }
-  .home-nav-list:after {
-    content: '';
-    display: block;
-    position: absolute;
-    left: 50%;
-    margin-left: -60px;
-    top: 50px;
-    height: 120px;
-    width: 120px;
-    background-color: #000;
-    background-image: url(../../img/skein-logo.svg);
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
-    background-size: 140px auto;
   }
 
   .home-nav-list-item {
