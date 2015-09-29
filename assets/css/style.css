@@ -365,7 +365,6 @@ button {
 .link-to-top {
   position: fixed;
   display: block;
-  right: -160px;
   bottom: 100px;
   width: 100px;
   text-align: center;
@@ -378,6 +377,9 @@ button {
   transition: all .6s ease;
   opacity: 0;
   cursor: pointer;
+}
+.link-to-top:not(.needed) {
+  right: -160px !important;
 }
 .link-to-top.needed {
   right: -100px;
