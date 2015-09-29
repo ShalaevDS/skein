@@ -295,6 +295,16 @@ button {
   border-top: 1px solid #2bd179;
   border-bottom: 1px solid #2bd179;
 }
+.soc-nav-link a {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  color: #35363a;
+  transition: color .4s ease;
+}
 .soc-nav-link i {
   position: absolute;
   display: block;
@@ -339,6 +349,9 @@ button {
   border-top-color: #2bd179;
   border-bottom-color: #2bd179;
 }
+.soc-nav-link:hover a {
+  color: #fff;
+}
 .soc-nav-link:hover:after {
   border-left-color: #2bd179;
 }
@@ -364,6 +377,7 @@ button {
   border-bottom: 1px solid #2bd179;
   transition: all .6s ease;
   opacity: 0;
+  cursor: pointer;
 }
 .link-to-top.needed {
   right: -100px;
@@ -650,9 +664,7 @@ body {
   text-align: center;
   font-weight: 700;
   text-transform: uppercase;
-}
-.default-nav-link:hover {
-  color: #fff;
+  transition: color .4s ease;
 }
 .default-nav-link span {
   display: inline-block;
@@ -669,6 +681,13 @@ body {
   height: 4px;
   border-radius: 1px;
   background: #fff;
+  transition: background .4s ease;
+}
+.default-nav-link:hover {
+  color: #01354d;
+}
+.default-nav-link:hover span:after {
+  background: #01354d;
 }
 .default-nav-link.green {
   color: #2bd179;
@@ -1000,6 +1019,12 @@ body {
   left: 0px;
   z-index: 2000;
 }
+.lower-slider-link:hover {
+  color: #2bd179;
+}
+.lower-slider-link:hover span:after {
+  background: #2bd179;
+}
 
 .home-lower-slider li {
   width: 100% !important;
@@ -1098,6 +1123,9 @@ body {
   box-shadow: 0 0 0 0 #01354d;
   margin-top: 63px;
   margin-bottom: -3px;
+}
+.home-contact-btn:hover {
+  color: #01354d;
 }
 
 .contact-content {
@@ -1814,6 +1842,9 @@ body {
   box-shadow: none;
   left: 2px;
   top: 2px;
+}
+.contact-submit:hover {
+  color: #fff;
 }
 
 @media (max-width: 767px) {

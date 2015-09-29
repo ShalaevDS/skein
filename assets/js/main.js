@@ -64,4 +64,11 @@ $(document).ready(function(){
             $('#to-top').removeClass('needed');
         }
     });
+    $.fn.scrollToTop = function() {
+        $(this).click(function() {
+            $("html, body").animate({scrollTop: 0}, "slow");
+            return false;
+        });
+    }
+    $('#to-top').scrollToTop();
 });
